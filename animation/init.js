@@ -7,6 +7,14 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
                 if (!checkioInput){
                     return;
                 }
+                $expl.html(
+                '    <table style="color: black">' +
+                '        <tr>' +
+                '            <th>Command</th>' +
+                '            <th>Queue</th>' +
+                '            <th>Sum</th>' +
+                '        </tr>' +
+                '    </table>');
                 var stack = [];
                 var s = 0;
                 var $table = $expl.find("table");
