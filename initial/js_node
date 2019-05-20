@@ -1,21 +1,19 @@
 "use strict";
 
-function digitStack(commands){
+export function digitStack(commands: string[]): number {
     return 0;
 }
 
-var assert = require('assert');
+import * as assert from 'assert';
 
-if (!global.is_checking) {
-	console.log("Example:");
-    console.log(digit_stack(["PUSH 3", "POP", "POP", "PUSH 4", "PEEK",
-                             "PUSH 9", "PUSH 0", "PEEK", "POP", "PUSH 1", "PEEK"]));
+console.log("Example:");
+console.log(digit_stack(["PUSH 3", "POP", "POP", "PUSH 4", "PEEK",
+                         "PUSH 9", "PUSH 0", "PEEK", "POP", "PUSH 1", "PEEK"]));
 
-    assert.equal(digitStack(["PUSH 3", "POP", "POP", "PUSH 4", "PEEK",
-                             "PUSH 9", "PUSH 0", "PEEK", "POP", "PUSH 1", "PEEK"]),
-                             8, "Example");
-    assert.equal(digitStack(["POP", "POP"]), 0, "pop, pop, zero");
-    assert.equal(digitStack(["PUSH 9", "PUSH 9", "POP"]), 9, "Push the button");
-    assert.equal(digitStack([]), 0, "Nothing");
-    console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
-}
+assert.equal(digitStack(["PUSH 3", "POP", "POP", "PUSH 4", "PEEK",
+                         "PUSH 9", "PUSH 0", "PEEK", "POP", "PUSH 1", "PEEK"]),
+                         8);
+assert.equal(digitStack(["POP", "POP"]), 0);
+assert.equal(digitStack(["PUSH 9", "PUSH 9", "POP"]), 9);
+assert.equal(digitStack([]), 0);
+console.log("Coding complete? Click 'Check' to review your tests and earn cool rewards!");
