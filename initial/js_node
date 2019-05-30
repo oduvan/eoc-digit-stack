@@ -7,7 +7,7 @@ export function digitStack(commands: string[]): number {
 import * as assert from 'assert';
 
 console.log("Example:");
-console.log(digit_stack(["PUSH 3", "POP", "POP", "PUSH 4", "PEEK",
+console.log(digitStack(["PUSH 3", "POP", "POP", "PUSH 4", "PEEK",
                          "PUSH 9", "PUSH 0", "PEEK", "POP", "PUSH 1", "PEEK"]));
 
 assert.equal(digitStack(["PUSH 3", "POP", "POP", "PUSH 4", "PEEK",
